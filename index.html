@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raph - Portfolio Cybersécurité & Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { darkbg: '#0f172a', cardbg: '#1e293b', accent: '#38bdf8' } }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkbg text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+    <header class="max-w-4xl mx-auto px-6 py-16 text-center">
+        <div class="inline-block p-2 px-4 mb-4 rounded-full bg-slate-800 text-accent text-sm font-mono border border-slate-700">
+            <i class="fa-solid fa-shield-halved mr-2"></i> Cybersécurité & Développement
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Raph</h1>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
+            Passionné par la sécurité réseau, l'automatisation Python et le développement web. Fondateur de <strong>NomaStudio</strong> (création et audit pour les entreprises normandes). <br>
+            <span class="text-slate-300 font-semibold">À la recherche d'un stage en cybersécurité en Île-de-France.</span>
+        </p>
+        
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://github.com/wnet337" target="_blank" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-5 py-3 rounded-lg font-medium transition border border-slate-700">
+                <i class="fa-brands fa-github text-xl"></i> GitHub wnet337
+            </a>
+            <a href="mailto:ton-email@domaine.com" class="flex items-center gap-2 bg-accent hover:bg-sky-400 text-darkbg font-semibold px-5 py-3 rounded-lg transition">
+                <i class="fa-solid fa-envelope"></i> Me contacter
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 space-y-12 pb-16 flex-grow">
+        
+        <section>
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 border-b border-slate-800 pb-3">
+                <i class="fa-solid fa-award text-accent"></i> Certifications
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-cardbg p-5 rounded-xl border border-slate-800">
+                    <div class="text-accent font-mono text-sm mb-1">Fortinet</div>
+                    <h3 class="text-lg font-semibold mb-2">Modules de Certification NSE</h3>
+                    <p class="text-sm text-slate-400">Validation des fondamentaux de la sécurité des réseaux, des architectures de pare-feu et de la défense contre les menaces.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 border-b border-slate-800 pb-3">
+                <i class="fa-solid fa-code text-accent"></i> Compétences & Outils
+            </h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-cardbg border border-slate-700 px-3 py-1.5 rounded-lg text-sm font-mono text-slate-300">Python</span>
+                <span class="bg-cardbg border border-slate-700 px-3 py-1.5 rounded-lg text-sm font-mono text-slate-300">Bash</span>
+                <span class="bg-cardbg border border-slate-700 px-3 py-1.5 rounded-lg text-sm font-mono text-slate-300">Linux (macOS/Debian)</span>
+                <span class="bg-cardbg border border-slate-700 px-3 py-1.5 rounded-lg text-sm font-mono text-slate-300">Développement Web (NomaStudio)</span>
+                <span class="bg-cardbg border border-slate-700 px-3 py-1.5 rounded-lg text-sm font-mono text-slate-300">Git / GitHub</span>
+                <span class="bg-cardbg border border-slate-700 px-3 py-1.5 rounded-lg text-sm font-mono text-slate-300">Audit & Pentest</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+        <p>&copy; 2026 - Raph. Hébergé sur GitHub Pages.</p>
+    </footer>
+</body>
+</html>
